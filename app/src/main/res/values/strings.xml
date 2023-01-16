@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">project31</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <string name="gallery">GALLERY</string>
+    <string name="photo">PHOTO</string>
+    <string name="string_open_camera">Open Camera</string>
+    <string name="string_next">Next</string>
+    <string name="string_share">Share</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_snippet_top_gallerytoolbar">snippet_top_gallerytoolbar</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+
+    <string-array name="sector_array">
+        <item>Animal Welfare</item>
+        <item>Education</item>
+        <item>Women Safety</item>
+        <item>Health</item>
+        <item>Economics</item>
+        <item>Women Empowerment</item>
+        <item>Agriculture</item>
+        <item>Religion and Culture</item>
+    </string-array>
+    <string name="title_activity_gallery">GalleryActivity</string>
+
+</resources>

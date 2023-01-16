@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="2dp"
+    android:weightSum="100"
+    android:orientation="vertical"
+    tools:context=".CreatePost">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/post_image"
+                android:text="Add an image"
+
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/myImageViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+                android:text="Add an Image"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_gallery"
+                android:gravity="center"
+
+                android:drawablePadding="5dp">
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+   <!--
+    <Button
+        android:id="@+id/post_image"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_weight="30"
+        android:text="Add an image"
+        app:iconGravity="textStart"
+        app:icon="@android:drawable/ic_menu_gallery"
+</Button>
+        >
+         android:onClick="openGallery" -->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:weightSum="100"
+        android:orientation="vertical"
+        android:paddingVertical="1.5dp"
+        >
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="40"
+        android:text="Location"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+       />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="60"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="@drawable/border"
+        android:drawableEnd="@drawable/ic_location"
+
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:weightSum="100"
+        android:orientation="vertical"
+        android:paddingVertical="1.5dp"
+        >
+    <TextView
+        android:id="@+id/textViewSector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="40"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:text="Sector" />
+
+
+
+        <Spinner
+            android:id="@+id/sector_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:background="@drawable/custom_spinner"
+          />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingVertical="5dp"
+        android:layout_weight="18">
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:inputType="textPersonName"
+        android:paddingVertical="2dp"
+        android:background="@drawable/border"
+        android:text="Add Description"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#DA5A5858"
+        android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:weightSum="100"
+        android:orientation="vertical"
+        android:paddingVertical="1.5dp"
+        >
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="Time of Occurrence"  />
+
+
+    <EditText
+        android:id="@+id/selectTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="60"
+        android:inputType="textPersonName"
+        android:onClick="selectTime"
+        android:background="@drawable/border"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16"
+        android:weightSum="100"
+        android:orientation="vertical"
+        android:paddingTop="1.5dp"
+
+        >
+        <TextView
+            android:id="@+id/textViewContactShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="35"
+            android:text="Your contact number will be shared with the organization so that they can contact you."
+            android:textSize="10dp"
+            android:gravity="center_vertical"
+            android:paddingTop="2dp"
+            />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="65"
+        android:layout_gravity="center"
+        android:text="Post!"
+        />
+    <!--
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:timePickerMode="spinner" />
+
+    -->
+    </LinearLayout>
+
+</LinearLayout>
